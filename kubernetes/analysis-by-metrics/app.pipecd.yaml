@@ -2,6 +2,11 @@ apiVersion: pipecd.dev/v1beta1
 kind: KubernetesApp
 spec:
   name: analysis-by-metrics
+  analysisProviders:
+    - name: my-prometheus
+      type: PROMETHEUS
+      config:
+        address: http://localhost:9090
   labels:
     env: example
     team: product
