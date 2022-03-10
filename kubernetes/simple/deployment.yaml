@@ -31,3 +31,6 @@ spec:
           - server
         ports:
         - containerPort: 9086
+      - name: nginx
+        image: nginx:1.20-alpine
+
