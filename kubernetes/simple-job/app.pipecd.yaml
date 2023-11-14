@@ -1,0 +1,13 @@
+apiVersion: pipecd.dev/v1beta1
+kind: KubernetesApp
+spec:
+  name: simple-job
+  labels:
+    env: example
+    team: product
+  input:
+    manifests:
+      - job.yaml
+    kubectlVersion: 1.18.5
+  description: |
+    This app demonstrates how to deploy a Kubernetes application with [Quick Sync](https://pipecd.dev/docs/concepts/#sync-strategy) strategy.
