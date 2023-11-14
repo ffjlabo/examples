@@ -2,6 +2,7 @@ apiVersion: batch/v1
 kind: Job
 metadata:
   name: pi
+  pipecd.dev/ignore-drift-detection: "true"
 spec:
   template:
     spec:
