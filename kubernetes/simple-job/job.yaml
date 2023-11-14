@@ -3,6 +3,7 @@ kind: Job
 metadata:
   name: pi
   annotations:
+    pipecd.dev/ignore-drift-detection: "true"
 spec:
   template:
     spec:
